@@ -83,8 +83,8 @@ public class MainManager : MonoBehaviour
         if(m_Points > HighScore) {
             HighScore = m_Points;
             MenuManager.Instance.HighScore = HighScore;
-            MenuManager.Instance.HighScoreUserName = HighScoreUserName;
-            HighScoreText.text = "Best Score: " + HighScoreUserName + ": Score: " + HighScore;
+            MenuManager.Instance.HighScoreUserName = MenuManager.Instance.UserName;
+            HighScoreText.text = "Best Score: " + MenuManager.Instance.HighScoreUserName + ": Score: " + HighScore;
         }
 
     }

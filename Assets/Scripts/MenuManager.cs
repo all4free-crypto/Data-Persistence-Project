@@ -57,6 +57,7 @@ public class MenuManager : MonoBehaviour
             HighScoreUserName = data.HighScoreUserName;
             HighScore = data.HighScore;
         }
+        Debug.Log("Path: " + Application.persistentDataPath);
         Debug.Log("LoadHighScore: " + HighScoreUserName);
         Debug.Log("LoadHighScore: " + HighScore);
     }
